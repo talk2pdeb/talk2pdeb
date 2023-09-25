@@ -1,0 +1,97 @@
+DATA ANALYSIS PROJECT IN EXCEL: PROJECT 2
+
+Creating an Insightful Road Accident Dashboard for 2021 and 2022
+
+Title: Creating an Insightful Road Accident Dashboard for 2021 and 2022
+
+Introduction: In today’s data-driven world, businesses are increasingly relying on data analytics to make informed decisions. One critical area where data analysis can have a significant impact is road safety. This article explores the process of creating a Road Accident Dashboard for the years 2021 and 2022, which provides valuable insights into road accident data. We’ll cover data cleaning, processing, analysis, and visualization steps to help you build a comprehensive dashboard that meets your client’s requirements.
+
+
+
+Data Cleaning: Data cleaning is the crucial first step in preparing your dataset for analysis. To ensure accurate results, follow these steps:
+
+1. Add Filters: In your spreadsheet, select the entire first row with the column names, and click on the “Data” tab. Then, click on “Filter” to enable data filtering.
+
+2. Search and Replace: In the “Accident_Severity” column, use the keyboard shortcut Ctrl+F (Cmd+F on Mac) to open the Find and Replace dialog. Replace any occurrences of “FETAL” with “FATAL” to standardize the data.
+
+
+
+Data Processing: Next, we need to process the data to create additional columns for better analysis:
+
+1. Adding a Month Column: To create a new column for the month of each accident, locate the “Accident_Date” column and insert a new column to the right. Use the formula =TEXT(Accident_Date,”mmm”) to extract the month.
+
+2. Adding a Year Column: Similarly, add a column to the right of “Accident_Date” and use the formula =TEXT(Accident_Date,”yyyy”) to extract the year.
+
+
+
+Data Analysis and Data Visualization: With the cleaned and processed data, we can now perform analysis and create visualizations to build the Road Accident Dashboard. Here are the key steps:
+
+Primary KPI — Total Casualties: Create a Pivot Table with “Accident_Severity” as Rows and “Number_of_Casualties” as Values. Calculate the total casualties.
+
+Primary KPI — Casualties by Severity: For each accident severity (Fatal, Serious, Slight), use the GETPIVOTDATA function to calculate the number of casualties. Convert these values to percentages.
+
+Primary KPI — Casualties by Vehicle Type: Merge similar vehicle types (e.g., Cars, Bikes, Vans) using calculated items. Create a Pivot Table with “Vehicle_Type” as Rows and “Number_of_Casualties” as Values. Calculate percentages.
+
+
+
+Monthly Trends: Create a Pivot Chart with years in the column label, months in the row label, and the number of casualties as values. This will show a monthly comparison of casualties for the current and previous years.
+
+
+
+Maximum Casualties by Road Type: Create a Pivot Chart with “Road_Type” in Rows and “Number_of_Casualties” in Values to identify road types with the highest casualties.
+
+
+
+Distribution of Casualties by Road Surface: Create a Pivot Chart with “Road_Surface” in Rows and “Number_of_Casualties” in Values. Use a pie chart to visualize the distribution.
+
+
+
+Casualties by Area/Location and Day/Night: Create a Pivot Chart with “Urban/Rural” in columns, “Light_Condition” in rows, and “Number_of_Casualties” in values. Use a bar chart to analyze the relationship between casualties and location/day/night.
+
+
+
+Conclusion: Building a Road Accident Dashboard for 2021 and 2022 allows organizations to gain valuable insights into road safety trends and make informed decisions to enhance safety measures. By following the data cleaning, processing, analysis, and visualization steps outlined in this article, you can create a comprehensive dashboard that meets your client’s requirements and aids in accident prevention and mitigation.
+
+Summary of the Analysis:
+
+
+
+The Road Accident Dashboard for the years 2021 and 2022 provides valuable insights into road safety trends and casualties. Here’s a concise summary of the key findings:
+
+Primary KPI — Total Casualties:
+
+• The total number of casualties for 2021 and 2022 is 4178883 casualties. This serves as the primary indicator of road safety performance during these years.
+
+Primary KPI — Casualties by Severity:
+
+• Fatal Accidents: 1.7% of all accidents resulted in fatalities, with a total of [number] fatalities.
+
+• Serious Accidents: 14.2% of all accidents were classified as serious, resulting in [number] serious injuries.
+
+• Slight Accidents: 84.1% of accidents were categorized as slight, causing [number] minor injuries.
+
+Primary KPI — Casualties by Vehicle Type:
+
+• Cars accounted for the majority of casualties, representing 79.8% of all accidents.
+
+• Other vehicle types, including buses, vans, bikes, and agricultural vehicles, collectively contributed 20.2% of casualties.
+
+Monthly Trends:
+
+• The dashboard reveals monthly trends in road casualties, highlighting variations in accident rates throughout the year.
+
+Maximum Casualties by Road Type:
+
+• Signal carriageway had the highest number of casualties, indicating the need for targeted safety measures in these areas.
+
+Distribution of Casualties by Road Surface:
+
+• Dry road was the most common surface associated with accidents, making up 66.9% of all accidents.
+
+Casualties by Area/Location and Day/Night:
+
+• Urban areas experienced 72.8% of accidents, with 118802 casualties during daylight hours.
+
+• Rural areas accounted for 26.7% of accidents, with 43217 casualties during nighttime conditions.
+
+Overall, the Road Accident Dashboard provides a comprehensive overview of road safety trends, allowing stakeholders to identify areas of concern, allocate resources effectively, and implement targeted strategies to reduce accidents and casualties on the road. This data-driven approach supports evidence-based decision-making and ultimately contributes to safer roadways for everyone.
