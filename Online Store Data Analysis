@@ -1,0 +1,287 @@
+ROADMAP TO LEARNING DATA ANALYSIS AND DATA SCIENCE
+
+DATA ANALYSIS PROJECT IN EXCEL: PROJECT 1
+
+2022 Online Store Analysis: Insights and Interactive Dashboard
+Introduction:
+
+In this project, we conduct a comprehensive analysis of an online store’s data for the year 2022. We begin by cleaning the data, processing it to extract relevant information, and then delve into various aspects of the online store’s performance. The ultimate goal is to gain insights into sales, customer behavior, and operational efficiency. We also create an interactive dashboard to visualize and explore the data.
+
+
+Data Cleaning:
+
+To ensure the data’s integrity, we start by identifying and rectifying errors, eliminating duplicates, and handling null values.
+
+
+Data Processing:
+
+During the data processing phase, we transform the raw data into a more structured and usable format for analysis. Here’s the step-by-step process for data processing:
+
+Age Group Classification:
+
+We categorize individuals into different age groups (Adult, Young, Teenager) based on their ages. This classification helps us understand the purchasing behavior of various age segments.
+
+
+Formula Used:
+
+=IF(age>50,”Adult”,IF(AND(age>=18, age<=50), “Young”,”Teenager”))
+
+Explanation:
+
+If a person’s age is greater than 50, they are classified as “Adult.”
+
+If a person’s age is between 18 and 50 (inclusive), they are classified as “Young.”
+
+If a person’s age is less than 18, they are classified as “Teenager.”
+
+
+2. Month Extraction:
+
+
+We extract the month from the date to enable analysis at a monthly level. This allows us to identify trends and patterns that may vary from month to month.
+
+
+Formula Used (for the first three letters of the month):
+
+=TEXT(date,”mmm”)
+
+Formula Used (for the full month name):
+
+=TEXT(date,”mmmm”)
+
+Explanation:
+
+The TEXT function extracts the desired format of the month from the date field.
+
+These processed data fields (Age Group and Month) will be used in subsequent analyses to gain insights into customer demographics and seasonal trends, respectively.
+
+By performing these data processing steps, we ensure that the data is ready for in-depth analysis and can provide meaningful insights for decision-making and reporting.
+
+
+Data Analysis:
+
+Creating a Pivot Table:
+
+DATA ANALYSIS PROJECT
+DATA ANALYSIS PROJECT
+Select Your Data:
+
+Click and drag your mouse to select the range of data that you want to use for your pivot table. Ensure your data has headers (column names) so that Excel can recognize them.
+
+Insert a Pivot Table:
+
+Go to the “Insert” tab in the Excel ribbon.
+
+Click on “PivotTable” in the Tables group.
+
+A “Create PivotTable” dialog box will appear.
+
+Choose Your Data Range:
+
+In the “Create PivotTable” dialog box, make sure the “Select a table or range” option is selected.
+
+Ensure that the range you selected in step 1 is correctly displayed in the “Table/Range” field.
+
+Choose Where to Place the Pivot Table:
+
+In the “Choose where you want the PivotTable report to be placed” section, select whether you want to place the pivot table in a new worksheet or an existing one.
+
+Click “OK”:
+
+Click the “OK” button to create the pivot table.
+
+Pivot Table Field List:
+
+A new worksheet will open with a blank pivot table on the left and the PivotTable Field List on the right.
+
+In the PivotTable Field List, you’ll see a list of all the column headers from your original data.
+
+Build Your Pivot Table:
+
+To create your pivot table, drag and drop fields from the PivotTable Field List into one of the four areas at the bottom of the Field List: “Report Filter,” “Column Labels,” “Row Labels,” and “Values.”
+
+For example, if you’re analyzing sales data by month, you might drag the “Month” field to the “Row Labels” area and the “Sales Amount” field to the “Values” area.
+
+Customize Your Pivot Table:
+
+You can customize your pivot table further by right-clicking on elements (e.g., column labels) and choosing options like “Sort,” “Filter,” or “Value Field Settings.”
+
+Creating a Pivot Chart:
+
+Once you’ve created a pivot table, you can easily create a pivot chart to visualize the data:
+
+Select the Pivot Table:
+
+Click anywhere within your pivot table to select it.
+
+Insert a Pivot Chart:
+
+Go to the “Insert” tab in the Excel ribbon.
+
+Choose a Chart Type:
+
+Click on “PivotChart” in the Charts group.
+
+Select the type of chart you want to create (e.g., column chart, bar chart, pie chart, etc.).
+
+Confirm Data Range:
+
+Ensure that Excel recognizes the data range associated with your pivot table in the “Create Chart” dialog box. It should be automatically detected.
+
+Click “OK”:
+
+Click the “OK” button to insert the pivot chart.
+
+Customize the Pivot Chart:
+
+You can further customize the pivot chart by selecting elements (e.g., bars or slices) and using the Chart Tools options in the Excel ribbon.
+
+Sales and Orders Comparison:
+DATA ANALYSIS PROJECT
+DATA ANALYSIS PROJECT
+Objective: Compare sales and order counts using a single chart, providing insights into revenue and order volume.
+
+Process:
+
+Select relevant data for analysis.
+
+Create a Pivot Table with ‘Month’ on the row label and ‘Amount’ and ‘Order ID’ as values.
+
+Turn off grand totals.
+
+Create a column chart to visualize the comparison.
+
+
+2. Highest Sales and Orders by Month:
+
+
+Objective: Identify the month with the highest sales and the highest number of orders, shedding light on seasonal trends.
+
+Process:
+
+Select relevant data for analysis.
+
+Create a Pivot Table with ‘Month’ on the row label and ‘Amount’ as values.
+
+Turn off grand totals.
+
+Create a column chart to visualize the data.
+
+
+3. Gender-based Purchasing Power:
+
+Objective: Determine whether men or women made more purchases in 2022, emphasizing the gender’s contribution to sales.
+
+Process:
+
+Select relevant data for analysis.
+
+Create a Pivot Table with ‘Gender’ on the row label and ‘Amount’ as values.
+
+Convert the values to percentages of the grand total.
+
+Create a pie chart to visualize the data.
+
+
+4. Order Status Overview:
+
+Objective: Analyze the different order statuses in 2022 to assess order processing efficiency.
+
+Process:
+
+Select relevant data for analysis.
+
+Create a Pivot Table with ‘Status’ on the row label and ‘Amount’ as values.
+
+Convert the values to percentages of the grand total.
+
+Create a pie chart to visualize the data.
+
+
+5. Top 10 Sales-contributing States:
+
+Objective: List the top 10 states that contribute the most to the store’s sales, providing geographic insights.
+
+Process:
+
+Select relevant data for analysis.
+
+Create a Pivot Table with ‘State’ on the row label and ‘Amount’ as values.
+
+Convert the values to percentages of the grand total.
+
+Create a column chart to visualize the data.
+
+
+6. Age and Gender Relationship:
+
+Objective: Examine the relationship between age groups and gender concerning the number of orders placed.
+
+Process:
+
+Select relevant data for analysis.
+
+Create a Pivot Table with ‘Age Group’ and ‘Gender’ as column labels and ‘Amount’ as values.
+
+Convert the values to percentages of the grand total.
+
+Create a pie chart to visualize the data.
+
+
+7. Channel Contribution to Sales:
+
+Objective: Identify which sales channel contributed the most to the store’s revenue, highlighting the most effective platform.
+
+Process:
+
+Select relevant data for analysis.
+
+Create a Pivot Table with ‘Channel’ on the row label and ‘Amount’ as values.
+
+Convert the values to percentages of the grand total.
+
+Create a column chart to visualize the data.
+
+
+8. Highest Selling Category:
+
+Objective: Determine the highest-selling product category, showcasing the store’s core strengths.
+
+Process:
+
+Select relevant data for analysis.
+
+Create a Pivot Table with ‘Category’ on the row label and ‘Amount’ as values.
+
+Convert the values to percentages of the grand total.
+
+Create a column chart to visualize the data.
+
+
+This data analysis process provides a systematic approach to extracting valuable insights from the dataset, covering various aspects of the online store’s performance in 2022.
+
+DATA ANALYSIS PROJECT
+Link Chart to Slicer (Optional):
+If you want to create interactive dashboards, you can add slicers to your pivot table and link them to the pivot chart. This allows users to filter the chart by selecting items in the slicer.
+
+Creating pivot tables and charts in Excel is a dynamic way to analyze and visualize your data. Experiment with different chart types and pivot table configurations to best represent your data and gain insights.
+
+
+Insights:
+
+The analysis reveals valuable insights:
+
+The store achieved its highest sales in March, with total sales exceeding 19 lakh.
+
+Adults outspent teenagers, with a preference for higher-priced items.
+
+Women were the store’s primary customers, contributing the most to overall spending.
+
+Approximately 93% of orders were successfully delivered.
+
+Maharashtra emerged as the top-selling state.
+
+Amazon was the leading sales platform.
+
+This comprehensive analysis and interactive dashboard provide a clear overview of the online store’s performance in 2022, enabling data-driven decision-making and strategic planning.
+
