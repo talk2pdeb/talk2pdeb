@@ -62,8 +62,7 @@ Data Analysis:
 
 Creating a Pivot Table:
 
-DATA ANALYSIS PROJECT
-DATA ANALYSIS PROJECT
+
 Select Your Data:
 
 Click and drag your mouse to select the range of data that you want to use for your pivot table. Ensure your data has headers (column names) so that Excel can recognize them.
@@ -137,8 +136,7 @@ Customize the Pivot Chart:
 You can further customize the pivot chart by selecting elements (e.g., bars or slices) and using the Chart Tools options in the Excel ribbon.
 
 Sales and Orders Comparison:
-DATA ANALYSIS PROJECT
-DATA ANALYSIS PROJECT
+
 Objective: Compare sales and order counts using a single chart, providing insights into revenue and order volume.
 
 Process:
@@ -284,4 +282,6 @@ Maharashtra emerged as the top-selling state.
 Amazon was the leading sales platform.
 
 This comprehensive analysis and interactive dashboard provide a clear overview of the online store’s performance in 2022, enabling data-driven decision-making and strategic planning.
+
+
 
